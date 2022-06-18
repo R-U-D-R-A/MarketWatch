@@ -10,7 +10,7 @@ import pandas as pd
 class CustomTiingoClient:
   client = None
   __config = {}
-  def __init__(self, api_key = '4a1c22f3f83c1d23688f1aa7f9161ae4d44dba3d'):
+  def __init__(self, api_key = '4557aca04549812597017e9804898d874711fc0c'):
       # Set TIINGO_API_KEY in your environment variables in your .bash_profile, OR
       # pass a dictionary with 'api_key' as a key into the TiingoClient.
         self.__set_tiingo_config(api_key)

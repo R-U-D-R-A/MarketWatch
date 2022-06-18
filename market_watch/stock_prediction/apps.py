@@ -15,8 +15,6 @@ class StockPredictionConfig(AppConfig):
         #connect_drive()
         global stocks
         global models_dict
-        stock_fb = {'name': 'Facebook', 'models': [], 'href': '/predict/FB'}
-        stocks['FB'] = stock_fb
         stock_appl = {'name': 'Apple', 'models': [], 'href': '/predict/AAPL'}
         stocks['AAPL'] = stock_appl
         stock_amzn = {'name': 'Amazon', 'models': [], 'href': '/predict/AMZN'}
@@ -25,7 +23,7 @@ class StockPredictionConfig(AppConfig):
         stocks['MSFT'] = stock_msft
         stock_googl = {'name': 'Google', 'models': [], 'href': '/predict/GOOGL'}
         stocks['GOOGL'] = stock_googl
-        models_dict = self.load_all_metrics_models(['FB', 'AAPL', 'AMZN', 'MSFT', 'GOOGL'])
+        models_dict = self.load_all_metrics_models(['AAPL', 'AMZN', 'MSFT', 'GOOGL'])
         
 
     def load_all_metrics_models(self, stocknames): 

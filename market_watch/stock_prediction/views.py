@@ -9,8 +9,9 @@ import pandas as pd
 from django.conf import settings as djangoSettings
 
 # Create your views here.
-def predict(request, stock_key = 'FB'):
+def predict(request, stock_key = 'AAPL'):
     stock = stocks[stock_key]
+    print(stock)
     batch_size = 20
     time_steps = 60
     days_to_predict = 15
